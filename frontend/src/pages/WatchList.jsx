@@ -19,7 +19,7 @@ const WatchList = () => {
       }
 
       try {
-        const res = await fetch("http://localhost:5001/api/watchlist", {
+        const res = await fetch("https://mern-watchlist-backend.onrender.com/api/watchlist", {
           method: "GET",
           headers: {
             Authorization: `Bearer ${token}`,
@@ -53,7 +53,7 @@ const WatchList = () => {
     if (!genre) return;
 
     try {
-      const res = await fetch("http://localhost:5001/api/watchlist/add", {
+      const res = await fetch("https://mern-watchlist-backend.onrender.com/api/watchlist/add", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -82,7 +82,7 @@ const WatchList = () => {
     if (!newTitle && !newGenre) return;
 
     try {
-      const res = await fetch(`http://localhost:5001/api/watchlist/update/${id}`, {
+      const res = await fetch(`https://mern-watchlist-backend.onrender.com/api/watchlist/update/${id}`, {
         method: "PUT",
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -104,7 +104,7 @@ const WatchList = () => {
 
   const handleStatusChange = async (id, status) => {
     try {
-      const res = await fetch(`http://localhost:5001/api/watchlist/update/${id}`, {
+      const res = await fetch(`https://mern-watchlist-backend.onrender.com/api/watchlist/update/${id}`, {
         method: "PUT",
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -128,7 +128,7 @@ const WatchList = () => {
     if (!window.confirm("Are you sure you want to delete this item?")) return;
 
     try {
-      const res = await fetch(`http://localhost:5001/api/watchlist/remove/${id}`, {
+      const res = await fetch(`https://mern-watchlist-backend.onrender.com/api/watchlist/remove/${id}`, {
         method: "DELETE",
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
       });

@@ -10,7 +10,7 @@ const ForgotResetPassword = () => {
   // Handle sending OTP
   const handleForgotPassword = async () => {
     try {
-      const response = await fetch("http://localhost:5001/api/auth/forgot-password", {
+      const response = await fetch("https://mern-watchlist-backend.onrender.com/api/auth/forgot-password", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),
@@ -30,7 +30,7 @@ const ForgotResetPassword = () => {
   // Handle resetting the password
   const handleResetPassword = async () => {
     try {
-      const response = await fetch("http://localhost:5001/api/auth/reset-password", {
+      const response = await fetch("https://mern-watchlist-backend.onrender.com/api/auth/reset-password", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, otp, newPassword }),

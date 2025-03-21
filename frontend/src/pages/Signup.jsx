@@ -12,7 +12,7 @@ const Signup = () => {
 
   const handleSignup = async () => {
     try {
-      const response = await fetch("http://localhost:5001/api/auth/register", {
+      const response = await fetch("https://mern-watchlist-backend.onrender.com/api/auth/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
@@ -36,7 +36,7 @@ const Signup = () => {
 
   const handleVerifyOtp = async () => {
     try {
-      const response = await fetch("http://localhost:5001/api/auth/verify-otp", {
+      const response = await fetch("https://mern-watchlist-backend.onrender.com/api/auth/verify-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, otp }),
@@ -62,7 +62,7 @@ const Signup = () => {
   const handleResendOtp = async () => {
     try {
       setIsResending(true);
-      const response = await fetch("http://localhost:5001/api/auth/resend-otp", {
+      const response = await fetch("https://mern-watchlist-backend.onrender.com/api/auth/resend-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),

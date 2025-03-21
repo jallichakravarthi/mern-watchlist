@@ -19,7 +19,7 @@ const Profile = () => {
 
       try {
         console.log("Fetching profile...");
-        const res = await fetch("http://localhost:5001/api/auth/profile", {
+        const res = await fetch("https://mern-watchlist-backend.onrender.com/api/auth/profile", {
           method: "GET",
           headers: {
             Authorization: `Bearer ${token}`,
