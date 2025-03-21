@@ -1,0 +1,66 @@
+/* Navbar - Ensure it spans full width */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%; /* Ensure it stretches full width */
+    height: 0px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+/* Home Content - Ensure it doesn’t overlap navbar */
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 10px; /* Prevents overlap with navbar */
+    background-color: #1a1a1a; /* Match Watchlist */
+    height:1px;
+}
+
+/* Styled box */
+.home-content h2 {
+    font-size: 2rem;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.home-content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+/* Styled button */
+.explore-btn {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    color: white;
+    background: #ff7e5f;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
+.explore-btn:hover {
+    background: #feb47b;
+    transform: scale(1.05);
+}
+
+.height {
+    height: 10000px;
+}

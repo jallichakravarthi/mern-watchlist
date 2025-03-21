@@ -1,0 +1,119 @@
+/* WatchList Page Styles */
+.watchlist-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+    width:100%;
+    background: linear-gradient(to right, #232526, #414345);
+    color: white;
+  }
+  
+  /* Heading */
+  .watchlist-container h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  /* Add Movie Button */
+  .add-movie-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .add-movie-btn {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .add-movie-btn:hover {
+    background: #218838;
+  }
+  
+  /* Watchlist Items */
+  .watchlist-item {
+    color:#565b60;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 380px;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    margin-bottom: 15px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .watchlist-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Status-based Background */
+  .completed {
+    background: rgba(40, 167, 69, 0.2);
+  }
+  
+  .watching {
+    background: rgba(255, 193, 7, 0.2);
+  }
+  
+  /* Movie Title */
+  .watchlist-item p {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  /* Buttons */
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+  }
+  
+  button {
+    padding: 7px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+  }
+  
+  .edit-btn {
+    background: #ffc107;
+    color: black;
+  }
+  
+  .complete-btn {
+    background: #28a745;
+    color: white;
+  }
+  
+  .unmark-btn {
+    background: #17a2b8;
+    color: white;
+  }
+  
+  .delete-btn {
+    background: #dc3545;
+    color: white;
+  }
+  
