@@ -17,7 +17,6 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/watchlist" element={<WatchList />} />
-        <Route path="/edit/:id" element={<EditWatchListItem />} />
         <Route path="/forgot-reset-password" element={<ForgotResetPassword />} />
       </Routes>
     </Router>
