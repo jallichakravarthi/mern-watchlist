@@ -4,7 +4,6 @@ import Home from './pages/Home';
 import Profile from './pages/Profile';
 import Login from './pages/Login';
 import WatchList from './pages/WatchList';
-import EditWatchListItem from './pages/EditWatchListItem';
 import ForgotResetPassword from './pages/ForgotResetPassword';  // ✅ Import
 
 function App() {
