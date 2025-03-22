@@ -109,7 +109,7 @@ const Signup = () => {
         </button>
 
         <p>
-          <label style={{ color: "grey" }}>Already have an account?</label>{" "}
+          <label style={{ color: "black" }}>Already have an account?</label>{" "}
           <Link to="/" style={styles.link}>
             Login here
           </Link>
