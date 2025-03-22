@@ -67,7 +67,7 @@ const Login = () => {
         </p>
 
         <p>
-        <label style={{ color: "#333", display: "inline-block" }}>Don't have an account?</label>
+        <label style={styles.label}>Don't have an account?</label>
           <Link to="/signup" style={styles.link}>
             Signup
           </Link>

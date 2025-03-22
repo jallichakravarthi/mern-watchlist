@@ -109,7 +109,7 @@ const Signup = () => {
         </button>
 
         <p>
-        <label style={{ color: "#333", display: "inline-block" }}>Already have an account?</label>
+        <label style={styles.label}>Already have an account?</label>
           <Link to="/" style={styles.link}>
             Login here
           </Link>
@@ -192,7 +192,7 @@ const styles = {
     marginTop: "10px",
   },
   label: {
-    color: "#333", // Change this to black or any visible color
+    color: "black", // Change this to black or any visible color
     fontSize: "14px",
     fontWeight: "bold",
   }
