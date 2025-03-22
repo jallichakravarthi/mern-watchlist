@@ -28,6 +28,9 @@ exports.register = async (req, res) => {
   try {
     const { email, password } = req.body;
 
+    // 🔹 Delete all unverified users before registering a new one
+    await User.deleteMany({ isVerified: false });
+
     // Check if user already exists
     const existingUser = await User.findOne({ email });
     if (existingUser) {

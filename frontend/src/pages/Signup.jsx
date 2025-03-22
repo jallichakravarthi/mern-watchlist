@@ -48,7 +48,7 @@ const Signup = () => {
         setShowOtpField(false);
 
         setTimeout(() => {
-          navigate("/home");
+          navigate("/");
         }, 1000);
       } else {
         setMessage(data.error || "Invalid OTP. Try again.");

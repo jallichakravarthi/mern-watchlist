@@ -40,7 +40,7 @@ const ForgotResetPassword = () => {
         setMessage("Password reset successful! You can now log in.");
         setStep(1); // Reset back to email entry step
         setTimeout(() => {
-          window.location.href = "/login";
+          window.location.href = "/";
         }, 1000);
       } else {
         setMessage(data.error || "Failed to reset password.");
