@@ -67,7 +67,7 @@ const Login = () => {
         </p>
 
         <p>
-          <lable>Don't have an account?</lable>{" "}
+          <label style={{color:"grey"}}>Don't have an account?</label>{" "}
           <Link to="/signup" style={styles.link}>
             Signup
           </Link>
