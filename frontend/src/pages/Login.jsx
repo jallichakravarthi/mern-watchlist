@@ -67,7 +67,7 @@ const Login = () => {
         </p>
 
         <p>
-          <label style={{color:"black"}}>Don't have an account?</label>{" "}
+          <label style={styles.label}>Don't have an account?</label>{" "}
           <Link to="/signup" style={styles.link}>
             Signup
           </Link>
@@ -125,6 +125,11 @@ const styles = {
     fontSize: "14px",
     marginTop: "10px",
   },
+  label: {
+    color: "#333", // Change this to black or any visible color
+    fontSize: "14px",
+    fontWeight: "bold",
+  }
 };
 
 export default Login;
