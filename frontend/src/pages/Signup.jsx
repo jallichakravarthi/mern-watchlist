@@ -192,7 +192,7 @@ const styles = {
     marginTop: "10px",
   },
   label: {
-    color: "black", // Change this to black or any visible color
+    color: "#3498db", // Change this to black or any visible color
     fontSize: "14px",
     fontWeight: "bold",
   }
