@@ -109,9 +109,9 @@ const Signup = () => {
         </button>
 
         <p>
-        <label style={styles.label}>Already have an account?</label>
+        <label style={styles.link}></label>
           <Link to="/" style={styles.link}>
-            Login here
+            Already have an account? Login here
           </Link>
         </p>
 

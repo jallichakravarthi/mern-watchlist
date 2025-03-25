@@ -35,7 +35,7 @@ const Login = () => {
   };
 
   return (
-    <center>
+    <div style={styles.center}>
       <div style={styles.container}>
         <h2 style={styles.heading}>Login</h2>
 
@@ -67,19 +67,25 @@ const Login = () => {
         </p>
 
         <p>
-        <label style={styles.link}>Don't have an account?</label>
+        <label style={styles.label}></label>
           <Link to="/signup" style={styles.link}>
-            Signup
+            Don't have an account? Signup
           </Link>
         </p>
 
         {message && <p style={styles.message}>{message}</p>}
       </div>
-    </center>
+    </div>
   );
 };
 
 const styles = {
+  center: {
+    minHeight: "100vh",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
   container: {
     width: "350px",
     padding: "30px",
@@ -88,6 +94,10 @@ const styles = {
     boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
     backgroundColor: "#fff",
     textAlign: "center",
+    margin:"50px auto",
+    display:"flex",
+    flexDirection: "column", // Stacks children vertically
+    alignItems: "center", // Centers content horizontally
   },
   heading: {
     color: "#333",
